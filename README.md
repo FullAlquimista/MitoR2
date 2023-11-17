@@ -1,5 +1,5 @@
 # Coletania de bibliotecas e aplicativos
-A coletania MitoR é utilizada no aprendizado de programação
+A coletania MitoR2 é utilizada no aprendizado de programação
 em C++.
 
 ## Bibliotecas utilizadas:
