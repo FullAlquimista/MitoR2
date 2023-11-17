@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogPesquisarTabela</class>
+ <widget class="QDialog" name="DialogPesquisarTabela">
+  <property name="windowTitle" stdset="0">
+   <string>Pesquisar...</string>
+  </property>
+  <property name="geometry" stdset="0">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>713</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="framePesquisa">
+     <property name="frameShape" stdset="0">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" stdset="0">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">QFrame#framePesquisa
+{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButtonTituloPesquisa">
+        <property name="text" stdset="0">
+         <string>Pesuisa</string>
+        </property>
+        <property name="styleSheet" stdset="0">
+         <string notr="true">QPushButton#pushButtonTituloPesquisa{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: #c0c4ff;
+	padding: 5px 0px;
+	max-height: 25px;
+   font-size: 14px;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="subFrameDiretivas">
+        <property name="frameShape" stdset="0">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow" stdset="0">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QTableView" name="tableView"/>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="topMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="orientation" stdset="0">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonOk">
+             <property name="text" stdset="0">
+              <string>OK</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

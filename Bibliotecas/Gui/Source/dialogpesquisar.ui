@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogPesquisar</class>
+ <widget class="QDialog" name="DialogPesquisar">
+  <property name="windowTitle" stdset="0">
+   <string>Pesquisar...</string>
+  </property>
+  <property name="geometry" stdset="0">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeView" name="treeView"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonOK">
+       <property name="text" stdset="0">
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

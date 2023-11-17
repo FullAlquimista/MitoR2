@@ -1,0 +1,15 @@
+{
+  "modulo": {
+    "nome": "ModuloTemplate",
+    "id": "73fc629c-1711-4977-a26a-817eabf0d565",
+    "descricao": "Este é um módulo template.",
+    "versao": "0.0.1",
+    "caminho": "ModuloTemplate",
+    "recursos": {
+      "plugin": "libModuloTemplate.dll"
+    },
+    "dependencias": [
+      "73fc629c-1711-4977-a26a-817eabf0d566"
+    ]
+  }
+}

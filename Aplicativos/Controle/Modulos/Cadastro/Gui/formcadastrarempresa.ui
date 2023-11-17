@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormCadastrarEmpresa</class>
+ <widget class="QDialog" name="FormCadastrarEmpresa">
+  <property name="windowTitle" stdset="0">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet" stdset="0">
+   <string notr="true"/>
+  </property>
+  <property name="sizePolicy" stdset="0">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>70</horstretch>
+    <verstretch>100</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="geometry" stdset="0">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>824</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollAreaFolha">
+     <property name="widgetResizable" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true"/>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry" stdset="0">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>986</width>
+        <height>804</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="frameFormulario">
+         <property name="frameShape" stdset="0">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow" stdset="0">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="styleSheet" stdset="0">
+          <string notr="true">QFrame#frameFormulario
+{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(170, 255, 255, 125), stop:0.55 rgb(214, 214, 214), stop:0.98 rgb(134, 134, 134), stop:1 rgba(0, 0, 0, 0));
+}
+QFrame#frameEndereco
+{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}QFrame#frameContato
+{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+QCheckBox {
+	background-color: rgba(255, 255, 255, 0);
+}
+QLabel {
+Font-size: 12px;
+	background-color: rgba(255, 255, 255, 0);
+}
+QGroupBox {
+	padding-top: 12px;
+	border-color: rgb(12, 12, 12);
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(116, 116, 116, 0), stop:1 rgba(253, 253, 253, 0));
+	font-size: 12px;
+	font-weight: bold;
+}
+QGroupBox::title {
+	margin-left: 12px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+QPushButton
+{
+	border: 1px solid rgba(0, 0, 0, 85);
+	border-radius: 8px;
+	border-right: 2px solid rgba(0, 0, 0, 185);
+	border-bottom: 2px solid rgba(0, 0, 0, 185);
+  background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(35, 84, 156, 125), stop:1 rgba(58, 134, 255, 125));
+  font-size: 13px;
+	height: 23px;
+	width:65px;
+	font-weight: normal;
+}
+
+QPushButton:pressed
+{
+	border: 1px solid rgba(0, 0, 0, 85);
+	border-left: 2px solid rgba(91, 91, 91, 185);
+	border-top: 2px solid rgba(91, 91, 91, 185);
+
+}
+
+QPushButton:hover
+{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(135, 184, 255, 125), stop:1 rgba(158, 234, 255, 125));
+}
+
+QPushButton#pushButtonPesquisaRapida{
+width:120px;
+}
+QPushButton#pushButtonRemover  {
+
+
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(217, 5, 27), stop:1 rgb(253, 183, 186));
+
+}
+QPushButton#pushButtonRemover:hover {
+    	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 85, 0), stop:1 rgba(255, 255, 255, 255));
+
+   
+}
+
+QPushButton#pushButtonRemover:pressed {
+    background-color: rgba(4, 50, 81, 120);
+}
+
+
+QPushButton#pushButtonRemoverEndereco  {
+
+
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(217, 5, 27), stop:1 rgb(253, 183, 186));
+}
+QPushButton#pushButtonRemoverEndereco:hover {
+   	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 85, 0), stop:1 rgba(255, 255, 255, 255));
+   
+}
+
+QPushButton#pushButtonRemoverEndereco:pressed {
+    background-color: rgba(4, 50, 81, 120);
+}
+
+
+
+QPushButton#pushButtonRemoverContato  {
+
+
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(217, 5, 27), stop:1 rgb(253, 183, 186));
+
+
+}
+QPushButton#pushButtonRemoverContato:hover {
+   	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 85, 0), stop:1 rgba(255, 255, 255, 255));
+
+   
+}
+
+QPushButton#pushButtonRemoverContato:pressed {
+    background-color: rgba(4, 50, 81, 120);
+}
+QComboBox
+{ 
+background-color:rgb(255, 255, 255);
+
+}
+</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelTituloFormulario">
+            <property name="text" stdset="0">
+             <string>Formulário cadastro de uma empresa</string>
+            </property>
+            <property name="alignment" stdset="0">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="styleSheet" stdset="0">
+             <string notr="true">QLabel#labelTituloFormulario {
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(59, 82, 131), stop:0.55 rgb(8, 122, 122), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));
+	padding: 5px 0px;
+	color: rgb(255, 255, 255);
+	max-height: 25px;
+    font-size: 14px;
+}</string>
+            </property>
+            <property name="font" stdset="0">
+             <font>
+              <pointsize>-1</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <property name="leftMargin">
+             <number>3</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QGroupBox" name="groupBoxClassificacao">
+                <property name="title" stdset="0">
+                 <string>Classificação:</string>
+                </property>
+                <property name="styleSheet" stdset="0">
+                 <string notr="true"/>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QCheckBox" name="checkBoxFabricante">
+                   <property name="text" stdset="0">
+                    <string>Fabricante</string>
+                   </property>
+                   <property name="styleSheet" stdset="0">
+                    <string notr="true"/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="checkBoxFornecedor">
+                   <property name="text" stdset="0">
+                    <string>Fornecedor</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="checkBoxCliente">
+                   <property name="text" stdset="0">
+                    <string>Cliente</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonPesquisaRapida">
+                <property name="text" stdset="0">
+                 <string>Pesquisa Rápida</string>
+                </property>
+                <property name="styleSheet" stdset="0">
+                 <string notr="true"/>
+                </property>
+                <property name="minimumSize" stdset="0">
+                 <size>
+                  <width>100</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="font" stdset="0">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonSalvar">
+                <property name="text" stdset="0">
+                 <string>Salvar</string>
+                </property>
+                <property name="styleSheet" stdset="0">
+                 <string notr="true"/>
+                </property>
+                <property name="minimumSize" stdset="0">
+                 <size>
+                  <width>50</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="font" stdset="0">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonLimpar">
+                <property name="text" stdset="0">
+                 <string>Limpar</string>
+                </property>
+                <property name="styleSheet" stdset="0">
+                 <string notr="true"/>
+                </property>
+                <property name="minimumSize" stdset="0">
+                 <size>
+                  <width>50</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="font" stdset="0">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonRemover">
+                <property name="text" stdset="0">
+                 <string>Remover</string>
+                </property>
+                <property name="styleSheet" stdset="0">
+                 <string notr="true"/>
+                </property>
+                <property name="minimumSize" stdset="0">
+                 <size>
+                  <width>100</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="font" stdset="0">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBoxCadastrar">
+              <property name="title" stdset="0">
+               <string>Cadastrar uma empresa:</string>
+              </property>
+              <property name="styleSheet" stdset="0">
+               <string notr="true"/>
+              </property>
+              <property name="sizePolicy" stdset="0">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="1" column="3">
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="labelCNPJ">
+                   <property name="text" stdset="0">
+                    <string>CNPJ:</string>
+                   </property>
+                   <property name="font" stdset="0">
+                    <font>
+                     <pointsize>-1</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditCNPJ"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="labelIE">
+                   <property name="text" stdset="0">
+                    <string>IE:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditIE"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="labelDataFundacao">
+                   <property name="text" stdset="0">
+                    <string>Data de fundação:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDateEdit" name="dateEditFundacao"/>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="3">
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QLabel" name="labelNomeFantasia">
+                   <property name="text" stdset="0">
+                    <string>Nome fantasia:</string>
+                   </property>
+                   <property name="sizePolicy" stdset="0">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font" stdset="0">
+                    <font>
+                     <pointsize>-1</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditNomeFantasia">
+                   <property name="sizePolicy" stdset="0">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="labelRazaoSocial">
+                   <property name="text" stdset="0">
+                    <string>Razão Social:</string>
+                   </property>
+                   <property name="sizePolicy" stdset="0">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font" stdset="0">
+                    <font>
+                     <pointsize>-1</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditRazaoSocial">
+                   <property name="sizePolicy" stdset="0">
+                    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="3">
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="labelTipoFornecedor">
+                   <property name="text" stdset="0">
+                    <string>Tipo do fornecedor:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBoxTipoFornecedor">
+                   <property name="sizePolicy" stdset="0">
+                    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_4">
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="orientation" stdset="0">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <property name="leftMargin">
+             <number>6</number>
+            </property>
+            <property name="topMargin">
+             <number>6</number>
+            </property>
+            <property name="rightMargin">
+             <number>6</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="frameEndereco">
+              <property name="frameShape" stdset="0">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow" stdset="0">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <property name="styleSheet" stdset="0">
+               <string notr="true"/>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>15</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="labelTituloEndereco">
+                 <property name="text" stdset="0">
+                  <string>Endereço</string>
+                 </property>
+                 <property name="alignment" stdset="0">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="styleSheet" stdset="0">
+                  <string notr="true">QLabel#labelTituloEndereco {
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(155, 159, 74), stop:1 rgb(211, 211, 211));
+	padding: 5px 0px;
+	padding: 5px 0px;
+	max-height: 25px;
+    font-size: 14px;
+}</string>
+                 </property>
+                 <property name="font" stdset="0">
+                  <font>
+                   <pointsize>-1</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="labelEndereco">
+                     <property name="text" stdset="0">
+                      <string>Identificação:</string>
+                     </property>
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxEndereco">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelDataEndereco">
+                     <property name="text" stdset="0">
+                      <string>Data inclusão:</string>
+                     </property>
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDateEdit" name="dateEditEndereco"/>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer">
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="orientation" stdset="0">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonAdicionarEndereco">
+                     <property name="text" stdset="0">
+                      <string>Adicionar</string>
+                     </property>
+                     <property name="styleSheet" stdset="0">
+                      <string notr="true"/>
+                     </property>
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize" stdset="0">
+                      <size>
+                       <width>65</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize" stdset="0">
+                      <size>
+                       <width>300</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font" stdset="0">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonRemoverEndereco">
+                     <property name="text" stdset="0">
+                      <string>Remover</string>
+                     </property>
+                     <property name="styleSheet" stdset="0">
+                      <string notr="true"/>
+                     </property>
+                     <property name="minimumSize" stdset="0">
+                      <size>
+                       <width>60</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize" stdset="0">
+                      <size>
+                       <width>300</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font" stdset="0">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <property name="topMargin">
+                    <number>6</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="labelLogradouro">
+                     <property name="text" stdset="0">
+                      <string>Logradouro:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditLogradouro"/>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelNumero">
+                     <property name="text" stdset="0">
+                      <string>Número:</string>
+                     </property>
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditNumero">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <property name="topMargin">
+                    <number>6</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="labelComplemento">
+                     <property name="text" stdset="0">
+                      <string>Complemento:</string>
+                     </property>
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditComplemento"/>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelBairro">
+                     <property name="text" stdset="0">
+                      <string>Bairro:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditBairro"/>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelCEP">
+                     <property name="text" stdset="0">
+                      <string>CEP:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditCEP">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <property name="topMargin">
+                    <number>6</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="labelPais">
+                     <property name="text" stdset="0">
+                      <string>País:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxPais">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font" stdset="0">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelEstado">
+                     <property name="text" stdset="0">
+                      <string>Estado:</string>
+                     </property>
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxEstado">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font" stdset="0">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelCidade">
+                     <property name="text" stdset="0">
+                      <string>Cidade:</string>
+                     </property>
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxCidade">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font" stdset="0">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <property name="leftMargin">
+             <number>6</number>
+            </property>
+            <property name="topMargin">
+             <number>6</number>
+            </property>
+            <property name="rightMargin">
+             <number>6</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="frameContato">
+              <property name="frameShape" stdset="0">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow" stdset="0">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <property name="styleSheet" stdset="0">
+               <string notr="true"/>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>15</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="labelTituloContato">
+                 <property name="text" stdset="0">
+                  <string>Contato</string>
+                 </property>
+                 <property name="alignment" stdset="0">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="styleSheet" stdset="0">
+                  <string notr="true">QLabel#labelTituloContato {
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(98, 98, 98), stop:1 rgb(211, 211, 211));
+	padding: 5px 0px;
+	padding: 5px 0px;
+	max-height: 25px;
+    font-size: 14px;
+}</string>
+                 </property>
+                 <property name="font" stdset="0">
+                  <font>
+                   <pointsize>-1</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="labelContato">
+                     <property name="text" stdset="0">
+                      <string>Identificação:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxContato">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelDataContato">
+                     <property name="text" stdset="0">
+                      <string>Data inclusão:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDateEdit" name="dateEditContato"/>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_3">
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="orientation" stdset="0">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonAdicionarContato">
+                     <property name="text" stdset="0">
+                      <string>Adicionar</string>
+                     </property>
+                     <property name="styleSheet" stdset="0">
+                      <string notr="true"/>
+                     </property>
+                     <property name="minimumSize" stdset="0">
+                      <size>
+                       <width>65</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="font" stdset="0">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonRemoverContato">
+                     <property name="text" stdset="0">
+                      <string>Remover</string>
+                     </property>
+                     <property name="styleSheet" stdset="0">
+                      <string notr="true"/>
+                     </property>
+                     <property name="minimumSize" stdset="0">
+                      <size>
+                       <width>60</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="font" stdset="0">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="labelEmail">
+                     <property name="text" stdset="0">
+                      <string>E-mail:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditEmail">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelTelefone">
+                     <property name="text" stdset="0">
+                      <string>Telefone:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditTelefone">
+                     <property name="sizePolicy" stdset="0">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="labelCargo">
+                     <property name="text" stdset="0">
+                      <string>Cargo:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditCargo"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="orientation" stdset="0">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>scrollAreaFolha</tabstop>
+  <tabstop>checkBoxFabricante</tabstop>
+  <tabstop>checkBoxFornecedor</tabstop>
+  <tabstop>checkBoxCliente</tabstop>
+  <tabstop>lineEditNomeFantasia</tabstop>
+  <tabstop>lineEditRazaoSocial</tabstop>
+  <tabstop>lineEditCNPJ</tabstop>
+  <tabstop>lineEditIE</tabstop>
+  <tabstop>dateEditFundacao</tabstop>
+  <tabstop>comboBoxEndereco</tabstop>
+  <tabstop>dateEditEndereco</tabstop>
+  <tabstop>lineEditLogradouro</tabstop>
+  <tabstop>lineEditNumero</tabstop>
+  <tabstop>lineEditComplemento</tabstop>
+  <tabstop>lineEditBairro</tabstop>
+  <tabstop>lineEditCEP</tabstop>
+  <tabstop>comboBoxPais</tabstop>
+  <tabstop>comboBoxEstado</tabstop>
+  <tabstop>comboBoxCidade</tabstop>
+  <tabstop>pushButtonAdicionarEndereco</tabstop>
+  <tabstop>pushButtonRemoverEndereco</tabstop>
+  <tabstop>comboBoxContato</tabstop>
+  <tabstop>dateEditContato</tabstop>
+  <tabstop>lineEditEmail</tabstop>
+  <tabstop>lineEditTelefone</tabstop>
+  <tabstop>lineEditCargo</tabstop>
+  <tabstop>pushButtonAdicionarContato</tabstop>
+  <tabstop>pushButtonRemoverContato</tabstop>
+  <tabstop>pushButtonPesquisaRapida</tabstop>
+  <tabstop>pushButtonSalvar</tabstop>
+  <tabstop>pushButtonLimpar</tabstop>
+  <tabstop>pushButtonRemover</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

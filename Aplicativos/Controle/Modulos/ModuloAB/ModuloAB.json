@@ -1,0 +1,15 @@
+{
+  "modulo": {
+    "nome": "ModuloAB",
+    "id": "73fc629c-1711-4977-a26a-817eabf0d567",
+    "descricao": "Este é um módulo template A.",
+    "versao": "0.0.1",
+    "caminho": "ModuloAB",
+    "recursos": {
+      "plugin": "libModuloAB.dll"
+    },
+    "dependencias": [
+      "73fc629c-1711-4977-a26a-817eabf0d566"
+    ]
+  }
+}

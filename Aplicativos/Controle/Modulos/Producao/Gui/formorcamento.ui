@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormOrcamento</class>
+ <widget class="QDialog" name="FormOrcamento">
+  <property name="windowTitle" stdset="0">
+   <string>Orçamento</string>
+  </property>
+  <property name="geometry" stdset="0">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>923</width>
+    <height>966</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frameFormulario">
+     <property name="frameShape" stdset="0">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" stdset="0">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">QFrame#frameFormulario
+{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="labelTituloFormulario">
+        <property name="text" stdset="0">
+         <string>Formulário de um orçamento</string>
+        </property>
+        <property name="alignment" stdset="0">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="styleSheet" stdset="0">
+         <string notr="true">QLabel#labelTituloFormulario {
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #c6c600;
+	padding: 5px 0px;
+	color: #000000;
+	max-height: 25px;
+    font-size: 14px;
+}</string>
+        </property>
+        <property name="font" stdset="0">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing" stdset="0">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="orientation" stdset="0">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonPesquisaRapida">
+          <property name="text" stdset="0">
+           <string>Pesquisa Rápida</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonNovo">
+          <property name="text" stdset="0">
+           <string>Novo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonSalvar">
+          <property name="text" stdset="0">
+           <string>Salvar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonLimpar">
+          <property name="text" stdset="0">
+           <string>Limpar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonRemover">
+          <property name="text" stdset="0">
+           <string>Remover</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable" stdset="0">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry" stdset="0">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>901</width>
+           <height>853</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QFrame" name="frameInformacoesGerais">
+            <property name="frameShape" stdset="0">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow" stdset="0">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="styleSheet" stdset="0">
+             <string notr="true">QFrame#frameInformacoesGerais
+{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>15</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButtonTituloInformacoesPrincipais">
+               <property name="text" stdset="0">
+                <string>Informações principais</string>
+               </property>
+               <property name="styleSheet" stdset="0">
+                <string notr="true">QPushButton#pushButtonTituloInformacoesPrincipais {
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: #859901;
+	padding: 5px 0px;
+	max-height: 25px;
+   font-size: 14px;
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="subFrameInformaoesGerais">
+               <property name="frameShape" stdset="0">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow" stdset="0">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout">
+                <property name="leftMargin">
+                 <number>2</number>
+                </property>
+                <property name="topMargin">
+                 <number>2</number>
+                </property>
+                <property name="rightMargin">
+                 <number>2</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>2</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBoxInformacoesGerais">
+                  <property name="title" stdset="0">
+                   <string/>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_1">
+                     <item>
+                      <widget class="QLabel" name="labelFabricante">
+                       <property name="text" stdset="0">
+                        <string>Fabricante:</string>
+                       </property>
+                       <property name="alignment" stdset="0">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                       <property name="minimumSize" stdset="0">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEditFabricante"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButtonPesquisarFabricante">
+                       <property name="text" stdset="0">
+                        <string>...</string>
+                       </property>
+                       <property name="maximumSize" stdset="0">
+                        <size>
+                         <width>25</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="labelIDFabricante">
+                       <property name="text" stdset="0">
+                        <string>ID:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="spinBoxIDFabricante">
+                       <property name="readOnly" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                     <item>
+                      <widget class="QLabel" name="labelCliente">
+                       <property name="text" stdset="0">
+                        <string>Cliente:</string>
+                       </property>
+                       <property name="alignment" stdset="0">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                       <property name="minimumSize" stdset="0">
+                        <size>
+                         <width>55</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEditCliente"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButtonPesquisarCliente">
+                       <property name="text" stdset="0">
+                        <string>...</string>
+                       </property>
+                       <property name="maximumSize" stdset="0">
+                        <size>
+                         <width>25</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="labelIDCliente">
+                       <property name="text" stdset="0">
+                        <string>ID:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="spinBoxIDCliente">
+                       <property name="readOnly" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_3">
+                     <item>
+                      <widget class="QLabel" name="labelTitulo">
+                       <property name="text" stdset="0">
+                        <string>Título:</string>
+                       </property>
+                       <property name="alignment" stdset="0">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                       <property name="minimumSize" stdset="0">
+                        <size>
+                         <width>55</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="layoutDirection" stdset="0">
+                        <enum>Qt::RightToLeft</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEditTitulo"/>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="labelDataOrcamento">
+                       <property name="text" stdset="0">
+                        <string>Data:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QDateEdit" name="dateEditOrcamento"/>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBoxAnexos">
+                     <property name="title" stdset="0">
+                      <string>Anexos:</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_10">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_10">
+                        <property name="bottomMargin">
+                         <number>6</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="pushButtonAdicionarAnexo">
+                          <property name="text" stdset="0">
+                           <string>Adicionar</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButtonBaixarAnexo">
+                          <property name="text" stdset="0">
+                           <string>Baixar</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="pushButtonDeletarAnexo">
+                          <property name="text" stdset="0">
+                           <string>Deletar</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_9">
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="orientation" stdset="0">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QTableView" name="tableViewAnexos"/>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_3">
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="orientation" stdset="0">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                  <zorder></zorder>
+                  <zorder></zorder>
+                  <zorder></zorder>
+                  <zorder>verticalSpacer_3</zorder>
+                  <zorder>groupBoxAnexos</zorder>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QGroupBox" name="groupBoxImagem">
+                  <property name="title" stdset="0">
+                   <string>Imagem do produto:</string>
+                  </property>
+                  <property name="maximumSize" stdset="0">
+                   <size>
+                    <width>190</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="labelImagemProduto">
+                     <property name="text" stdset="0">
+                      <string/>
+                     </property>
+                     <property name="scaledContents" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="pixmap" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                     <property name="alignment" stdset="0">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="frameShape" stdset="0">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow" stdset="0">
+                      <enum>QFrame::Sunken</enum>
+                     </property>
+                     <property name="minimumSize" stdset="0">
+                      <size>
+                       <width>180</width>
+                       <height>180</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize" stdset="0">
+                      <size>
+                       <width>180</width>
+                       <height>180</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_6">
+                     <property name="topMargin">
+                      <number>6</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>6</number>
+                     </property>
+                     <item>
+                      <spacer name="horizontalSpacer_3">
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="orientation" stdset="0">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButtonCarregarImagemProduto">
+                       <property name="text" stdset="0">
+                        <string>Trocar Imagem</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_4">
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="orientation" stdset="0">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="framePropostas">
+            <property name="frameShape" stdset="0">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow" stdset="0">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="styleSheet" stdset="0">
+             <string notr="true">QFrame#framePropostas
+{
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>15</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButtonTituloPropostas">
+               <property name="text" stdset="0">
+                <string>Propostas</string>
+               </property>
+               <property name="styleSheet" stdset="0">
+                <string notr="true">QPushButton#pushButtonTituloPropostas {
+	border: 1px solid #FF17365D;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: rgba(182, 182, 91, 120);
+	padding: 5px 0px;
+	max-height: 25px;
+    font-size: 14px;
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="subFramePropostas">
+               <property name="frameShape" stdset="0">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow" stdset="0">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <property name="topMargin">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="labelIdentificacaoProposta">
+                    <property name="text" stdset="0">
+                     <string>Identificação:</string>
+                    </property>
+                    <property name="alignment" stdset="0">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="sizePolicy" stdset="0">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBoxIdentificacaoProposta">
+                    <property name="minimumSize" stdset="0">
+                     <size>
+                      <width>150</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButtonAdicionar">
+                    <property name="text" stdset="0">
+                     <string>Adicionar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButtonSalvarProposta">
+                    <property name="text" stdset="0">
+                     <string>Salvar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButtonRemoverProposta">
+                    <property name="text" stdset="0">
+                     <string>Remover</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_6">
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="orientation" stdset="0">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <property name="topMargin">
+                   <number>6</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="labelTipoProposta">
+                    <property name="text" stdset="0">
+                     <string>Tipo do orçamento:</string>
+                    </property>
+                    <property name="alignment" stdset="0">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="minimumSize" stdset="0">
+                     <size>
+                      <width>100</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBoxTipoProposta">
+                    <property name="minimumSize" stdset="0">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_8">
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="orientation" stdset="0">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <property name="topMargin">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="labelNumeroOrcamento">
+                    <property name="text" stdset="0">
+                     <string>Número do orçamento:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEditNumeroOrcamento">
+                    <property name="sizePolicy" stdset="0">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="labelDataProposta">
+                    <property name="text" stdset="0">
+                     <string>Data</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateEdit" name="dateEditDataProposta"/>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="labelProducaoHoraria">
+                    <property name="text" stdset="0">
+                     <string>Produção horaria:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="spinBoxProducaoHoraria">
+                    <property name="maximum" stdset="0">
+                     <number>999999</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="labelPPM">
+                    <property name="text" stdset="0">
+                     <string>peças.</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_5">
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="orientation" stdset="0">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="labelDescricao">
+                  <property name="text" stdset="0">
+                   <string>Descrição:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTextEdit" name="textEditDescricao">
+                  <property name="maximumSize" stdset="0">
+                   <size>
+                    <width>16777215</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <property name="spacing" stdset="0">
+                   <number>2</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="labelItens">
+                    <property name="text" stdset="0">
+                     <string>Itens:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButtonAdicionarItem">
+                    <property name="text" stdset="0">
+                     <string>+</string>
+                    </property>
+                    <property name="maximumSize" stdset="0">
+                     <size>
+                      <width>37</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font" stdset="0">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                      <underline>false</underline>
+                      <strikeout>false</strikeout>
+                      <kerning>true</kerning>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButtonRemoverItem">
+                    <property name="text" stdset="0">
+                     <string>-</string>
+                    </property>
+                    <property name="maximumSize" stdset="0">
+                     <size>
+                      <width>37</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font" stdset="0">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_10">
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="orientation" stdset="0">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QTableView" name="tableViewItens">
+                  <property name="minimumSize" stdset="0">
+                   <size>
+                    <width>0</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <property name="topMargin">
+                   <number>6</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="labelValorTotal">
+                    <property name="text" stdset="0">
+                     <string>Valor total:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDoubleSpinBox" name="doubleSpinBoxValorTotal">
+                    <property name="prefix" stdset="0">
+                     <string/>
+                    </property>
+                    <property name="maximum" stdset="0">
+                     <double>99999999.989999994635582</double>
+                    </property>
+                    <property name="decimals" stdset="0">
+                     <number>4</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="labelPrazoEntrega">
+                    <property name="text" stdset="0">
+                     <string>Prazo de entrega:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="spinBoxPrazoEntrega">
+                    <property name="minimum" stdset="0">
+                     <number>1</number>
+                    </property>
+                    <property name="maximum" stdset="0">
+                     <number>720</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="labelDiasUteis">
+                    <property name="text" stdset="0">
+                     <string>dias úteis.</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_2">
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="orientation" stdset="0">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBoxAprovacaoProposta">
+                  <property name="title" stdset="0">
+                   <string>Aprovação da proposta:</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_9">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_5">
+                     <property name="topMargin">
+                      <number>6</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="labelNumeroPedido">
+                       <property name="text" stdset="0">
+                        <string>Numero do pedido:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEditNumeroPedido">
+                       <property name="maximumSize" stdset="0">
+                        <size>
+                         <width>290</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="labelDataAprovacao">
+                       <property name="text" stdset="0">
+                        <string>Data aprovação:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QDateEdit" name="dateEditDataAprovacao"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButtonAprovarProposta">
+                       <property name="text" stdset="0">
+                        <string>Aprovar proposta</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButtonCancelarAprovacao">
+                       <property name="text" stdset="0">
+                        <string>Cancelar aprovação</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_7">
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="orientation" stdset="0">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_1">
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="orientation" stdset="0">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditFabricante</tabstop>
+  <tabstop>pushButtonPesquisarFabricante</tabstop>
+  <tabstop>lineEditCliente</tabstop>
+  <tabstop>pushButtonPesquisarCliente</tabstop>
+  <tabstop>lineEditTitulo</tabstop>
+  <tabstop>dateEditOrcamento</tabstop>
+  <tabstop>pushButtonCarregarImagemProduto</tabstop>
+  <tabstop>spinBoxIDFabricante</tabstop>
+  <tabstop>spinBoxIDCliente</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
