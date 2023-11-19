@@ -50,9 +50,9 @@ A parte pode ter itens na lista de materiais para a descrever.
  - Observação. Caso tenha algum tratamento ou modificação a fazer.
  - 
 ###### Tabela: registros das partes.
-| id  | id_projeto | numero_parte | descricao            | posicao | quantidade | dimensao_acabada | dimensao_bruta | observacao |
-|:---:|:-----------|:-------------|:---------------------|:--------|:-----------|:-----------------|:---------------|:----------:|
-|  1  | 1          | 5304-10-00   | Eixo flange do disco | 1       | 1          |                  |                |            |
+| id  | id_projeto | numero_parte | descricao                        | posicao | quantidade | dimensao_acabada | dimensao_bruta | observacao |
+|:---:|:-----------|:-------------|:---------------------------------|:--------|:-----------|:-----------------|:---------------|:----------:|
+|  1  | 1          | 5304-12-00   | 5304-12-Carrossel Entr. Vertedor | 1       | 1          |                  |                |            |
 Comando:
 ```
 CREATE TABLE producao.partes_projetos (id BIGINT PRIMARY KEY,

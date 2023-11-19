@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Bibliotecas/Gui/Source",
+		"source" : "Bibliotecas/Gui/Source"
+	}
+}

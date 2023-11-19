@@ -1,0 +1,58 @@
+[2023-11-18 00:31:55.936] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:31:55.936] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:37:22.772] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:37:22.772] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:37:47.908] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:37:47.908] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:38:45.568] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:38:45.569] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:38:55.746] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:38:55.747] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:39:45.858] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:39:45.859] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:40:47.991] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:40:47.992] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:41:09.013] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:41:09.013] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:51:54.755] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:51:54.755] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:55:17.682] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:55:17.682] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 00:57:30.678] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 00:57:30.679] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 07:20:18.943] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 07:20:18.943] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:05:30.261] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:05:30.261] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:09:20.948] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:09:20.948] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:09:48.683] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:09:48.684] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:16:36.519] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:16:36.519] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:17:26.844] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:17:26.845] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:19:11.096] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:19:11.097] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:20:08.011] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:20:08.011] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:23:08.417] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:23:08.417] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:24:34.374] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:24:34.374] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 16:30:26.392] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 16:30:26.392] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 21:23:56.152] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 21:23:56.153] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 21:27:07.611] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 21:27:07.611] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 21:29:08.368] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 21:29:08.369] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 22:37:39.571] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 22:37:39.572] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 22:40:16.650] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 22:40:16.651] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 22:43:56.594] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 22:43:56.594] [MitoR::Log] [debug] Informações para depuração ativa.
+[2023-11-18 22:49:03.211] [MitoR::Log] [info] Logging iniciado.
+[2023-11-18 22:49:03.211] [MitoR::Log] [debug] Informações para depuração ativa.

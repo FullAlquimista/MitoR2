@@ -56,6 +56,11 @@ void MainWindow::closeEvent(QCloseEvent *e)
 {
   auto op = QMessageBox::question(this, "Sair...", "Deseja realmente sair ?", "Sim", "Não");
   if (op == 0) {
+//    for(auto i=0; i < ui->tabWidget->count(); ++i) {
+//      QWidget *w = ui->tabWidget->widget(i);
+//      ui->tabWidget->removeTab(i);
+//      w->deleteLater();
+//    }
     MitoR::Modulo::descarregarTodosModulos();
     salvarConfiguracoes();
     e->accept();

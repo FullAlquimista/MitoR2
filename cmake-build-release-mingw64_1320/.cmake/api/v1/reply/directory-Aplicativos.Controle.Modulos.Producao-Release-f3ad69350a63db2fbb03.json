@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Aplicativos/Controle/Modulos/Producao",
+		"source" : "Aplicativos/Controle/Modulos/Producao"
+	}
+}

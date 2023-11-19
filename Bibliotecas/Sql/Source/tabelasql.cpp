@@ -59,16 +59,6 @@ namespace MitoR::Sql
   {
     // Comando para inserir um registro:
     // INSERT INTO tabela (colunas) VALUES (valores);
-    QString colunas;
-    QString valores;
-    for(auto coluna =0, max=registro.count(); coluna < max; ++coluna) {
-      if(coluna != 0) {
-        colunas.append(", ");
-        valores.append(", ");
-      }
-      colunas.append(QString(R"("%1")").formatArg(registro.fieldName(coluna)));
-      valores.append(QString(":%1").formatArg(registro.fieldName(coluna)));
-    }
     QString esquema;
     QString tabela;
     Impl::extrairEsquemaTabela(nomeTabela, esquema, tabela);
@@ -77,6 +67,22 @@ namespace MitoR::Sql
       identificadorTabela = tabela;
     else
       identificadorTabela = QString(R"("%1"."%2")").formatArgs(esquema, tabela);
+
+    QString colunas;
+    QString valores;
+    bool bInicio = false;
+    auto idx = consulta.driver()->primaryIndex(identificadorTabela);
+    for(auto coluna = 0, max=registro.count(); coluna < max; ++coluna) {
+      if(registro.fieldName(coluna) == idx.fieldName(0))
+        continue;
+      if(bInicio) {
+        colunas.append(", ");
+        valores.append(", ");
+      }
+      colunas.append(QString(R"("%1")").formatArg(registro.fieldName(coluna)));
+      valores.append(QString(":%1").formatArg(registro.fieldName(coluna)));
+      bInicio = true;
+    }
     
     consulta.prepare(QString(R"(INSERT INTO %1 (%2) VALUES (%3) RETURNING *;)").formatArgs(
         identificadorTabela,
@@ -91,8 +97,7 @@ namespace MitoR::Sql
     }
     if(consulta.next()) {
       auto res = consulta.record();
-      auto index = consulta.driver()->primaryIndex(identificadorTabela);
-      registro.setValue(index.fieldName(0), res.value(index.fieldName(0)));
+      registro.setValue(idx.fieldName(0), res.value(idx.fieldName(0)));
     }
     
     return Erro{Erro::Sucesso, ""};

@@ -1,0 +1,15 @@
+"C:\Programas\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Programas/JetBrains/CLion 2021.3.4/bin/ninja/win/ninja.exe" -G Ninja C:\Projetos\CPP\MitoR2
+CMake Warning (dev) at C:/Programas/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (GTest) does
+  not match the name of the calling package (gtest).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  C:/Programas/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/FindGTest.cmake:255 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:26 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Projetos/CPP/MitoR2/cmake-build-release-mingw64_1320

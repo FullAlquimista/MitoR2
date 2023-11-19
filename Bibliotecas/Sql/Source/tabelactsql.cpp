@@ -157,6 +157,9 @@ namespace MitoR::Sql
       spdlog::warn("{}", consulta.executedQuery().toStdString());
       return Erro{Erro::Falhou, "Ocorreu uma falha no comando de inserção de um novo item."};
     }
+    if(consulta.next()) {
+      registro.setValue({"id"}, consulta.value("id"));
+    }
     return Erro{Erro::Sucesso, ""};
   }
 }
