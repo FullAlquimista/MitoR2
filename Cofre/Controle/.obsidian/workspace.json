@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "aace910c0c1cb94b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a6490c43e2ab30a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a77031bf9bc696c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projeto Controle/Compras.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fcdd7942ec5c0ae1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Diario/2023-12-10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "98620e0a32b714f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Diario/2023-11-28.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bcb8bfd7741ed32d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Diario/2023-11-28.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "686a8ea4837ad425",
+    "type": "split",
+    "children": [
+      {
+        "id": "e043271eb77ba402",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56163a8c02301343",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9453d570579d8ec6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ddd27483c9b1fa18",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4e168aef3bbd5120",
+    "type": "split",
+    "children": [
+      {
+        "id": "8680de465143077a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f85bd33bf7114b2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Diario/2023-11-28.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "8c0252038cd0273d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Diario/2023-11-28.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "668c60cbb65ca431",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6c3c010f236fb686",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Diario/2023-11-28.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "zk-prefixer:Criar nova nota única": false
+    }
+  },
+  "active": "98620e0a32b714f1",
+  "lastOpenFiles": [
+    "Diario/2023-12-27.md",
+    "Diario/2023-12-19.md",
+    "Diario/2023-12-10.md",
+    "Diario/2023-11-28.md",
+    "Pasted image 20231227134442.png",
+    "Pasted image 20231210104830.png",
+    "Pasted image 20231210104702.png",
+    "Pasted image 20231210104637.png",
+    "Projeto Controle/Cadastro.md",
+    "Projeto Controle/Compras.md",
+    "Projeto Controle/Projetos.md",
+    "Projeto Controle/Producao.md",
+    "Projeto Controle/Controle.md",
+    "Projeto Controle/RESUMO.md",
+    "Projeto Controle/PostgreSQL.md",
+    "Projeto Controle",
+    "2023-11-28.md",
+    "Diario"
+  ]
+}
