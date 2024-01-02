@@ -42,7 +42,7 @@ private:
   Ui::FormCadastrarPlanoConta *ui;
   Sessao::IAcesso *_acesso{nullptr};
   QStandardItemModel *_model{nullptr};
-  
+  QMap<int, QStandardItem *> itens;
   QSqlQueryModel *_tPlanosContaCt{nullptr};
   void atualizarTabelaPlanosConta();
   void carregarPlanosConta();

@@ -38,6 +38,7 @@ target_link_libraries(${Aplicativo}
   PRIVATE MitoR::Log
   PRIVATE MitoR::Configuracao
   PRIVATE MitoR::Recursos
+  PRIVATE MitoR::Sql
   PRIVATE Sessao::ISessao
   PRIVATE Controle::IControle
   )

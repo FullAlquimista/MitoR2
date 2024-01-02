@@ -22,6 +22,7 @@ namespace Sessao
 
     bool acessarSistema(const QString &usuario, const QString &senha) override;
     QString usuario() const override;
+    int64_t oidUsuario() const override;
     int verificarPrevilegio() const override;
     QSqlDatabase conexao(const QString &nomeConexao = QSqlDatabase::defaultConnection) const override;
     bool verificarAcesso(const QString idDispositivo) override;

@@ -54,6 +54,26 @@ int main(int nArgs, char *pArgs[])
       spdlog::info("Registro {} inserido.", reg.value("id").toInt());
     }
   }
+  if(false) {
+    MitoR::Sql::TabelaSql tblListaMateriais;
+    QSqlRecord reg = bd.record("producao.lista_materiais");
+    reg.setValue({"id_parte"}, 4);
+    reg.setValue({"id_material"}, 2);
+    reg.setValue({"quantidade"}, 1);
+    reg.setValue({"id_tipo_material"}, 4);
+    reg.setValue({"id_formato_material"}, 4);
+    reg.setValue({"d1"}, 42.1);
+    reg.setValue({"d2"}, 89);
+    reg.setValue({"d3"}, 93.5);
+    reg.setValue({"peso"}, 0.28);
+    reg.setValue({"data"}, QDate::currentDate());
+    if(auto err = tblListaMateriais.inserirRegistroComIndex("producao.lista_materiais", p, reg); err == err.Falhou) {
+      spdlog::error("Falha ao inserir o registro.\n{}", err.msg.toStdString());
+    }else {
+      spdlog::info("Registro {} inserido.", reg.value("id").toInt());
+    }
+  }
+
 
   MitoR::Log::finalizar();
   return 0;

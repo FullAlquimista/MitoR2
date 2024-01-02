@@ -40,6 +40,4 @@ Thumbs.db
 ##############
 .idea
 build
-cmake-build-debug
-cmake-build-debug-mingw64_1320
-cmake-build-release-mingw64_1320
+cmake-build*

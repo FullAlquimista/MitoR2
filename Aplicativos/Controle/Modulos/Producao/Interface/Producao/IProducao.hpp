@@ -4,14 +4,15 @@
 #pragma once
 
 #include <MitoR/MitoR.hpp>
+#include <Cadastro/ICadastro.hpp>
 
 namespace Producao
 {
   const QString Producao_ID = "/Producao";
   const QString MenuProducao = Producao_ID + "/MenuProducao";
-  const QString SubMenuInfoProducao_ID = Producao_ID + "/SubMenuInfoProducao";
+  const QString SubMenuInfoProducao_ID = Cadastro::MenuCadastro_ID + "/SubMenuInfoProducao";
   const QString ActionCadastrarTiposPropostas_ID = SubMenuInfoProducao_ID + "/ActionCadastrarTiposPropostas";
-  const QString FormCadastrarTiposPropostas_ID = Producao_ID + "/FormCadastrarTiposPropostas";
+  const QString FormCadastrarTiposPropostas_ID = SubMenuInfoProducao_ID + "/FormCadastrarTiposPropostas";
   const QString ActionOrcamento_ID = SubMenuInfoProducao_ID + "/ActionOrcamento";
   const QString FormOrcamento_ID = Producao_ID + "/FormOrcamento";
 

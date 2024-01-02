@@ -89,6 +89,9 @@ namespace Sessao
   {
     return _conexao.userName();
   }
+  int64_t Acesso::oidUsuario() const {
+    return _oid;
+  }
   int Acesso::verificarPrevilegio() const
   {
     return _previlegio;
@@ -170,4 +173,5 @@ namespace Sessao
   {
     return QSharedPointer<Json>(new Json(*_diretivas));
   }
+
 } // namespace Sessao

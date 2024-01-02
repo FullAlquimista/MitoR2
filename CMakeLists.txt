@@ -3,13 +3,13 @@ set(Projeto MitoR)
 project(${Projeto})
 
 list(APPEND CMAKE_PREFIX_PATH
-  C:/Bibliotecas/CopperSpice/1.8.2/Mgw64-13.2.0/cmake/CopperSpice
-  C:/Bibliotecas/NlohmannJson/3.11.3/Mgw64-13.2.0/share/cmake/nlohmann_json
-  C:/Bibliotecas/Spdlog/1.12.0/Mgw64-13.2.0/lib/cmake/spdlog
+  C:/Bibliotecas/CopperSpice/1.8.2/Mgw64-13.1.0/release/cmake/CopperSpice
+  C:/Bibliotecas/NlohmannJson/3.11.3/Mgw64-13.1.0/shared/share/cmake/nlohmann_json
+  C:/Bibliotecas/Spdlog/1.12.0/Mgw64-13.1.0/shared/lib/cmake/spdlog
   )
 
 list(APPEND GTEST_ROOT
-  C:/Bibliotecas/GoogleTest/1.13/Mgw64-13.2.0
+  C:/Bibliotecas/GoogleTest/1.13/Mgw64-13.1.0
   )
 
 enable_testing()

@@ -24,6 +24,7 @@ namespace Sessao
 
     virtual bool acessarSistema(const QString &usuario, const QString &senha) = 0;
     virtual QString usuario() const = 0;
+    virtual int64_t oidUsuario() const = 0;
     virtual int verificarPrevilegio() const = 0;
     virtual QSqlDatabase conexao(const QString &nomeConexao = QSqlDatabase::defaultConnection) const = 0;
     virtual bool verificarAcesso(const QString idDispositivo) = 0;

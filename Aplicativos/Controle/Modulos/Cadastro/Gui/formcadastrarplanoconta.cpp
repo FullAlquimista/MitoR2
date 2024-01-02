@@ -83,7 +83,7 @@ FormCadastrarPlanoConta::FormCadastrarPlanoConta(QWidget *parent) : QWidget(pare
     return;
   }
 
-  _model = new QStandardItemModel(this);
+  _model = new QStandardItemModel(ui->treeView);
   _model->insertColumns(0, 1, QModelIndex());
   _model->setHeaderData(0, Qt::Horizontal, QString("Nome"));
   ui->treeView->setModel(_model);
@@ -212,7 +212,7 @@ void FormCadastrarPlanoConta::carregarPlanosConta()
   // Limpa o modelo sem apagar as informações de cabeçalho.
   _model->removeRows(0, _model->rowCount(QModelIndex()));
 
-  QMap<int, QStandardItem *> itens;
+
   for (int linha = 0; linha < _tPlanosContaCt->rowCount(); ++linha) {
     auto r = _tPlanosContaCt->record(linha);
     int idItem = r.value(1).toInt();
@@ -262,7 +262,8 @@ void FormCadastrarPlanoConta::carregarPlanosConta()
   auto itemRaiz = _model->invisibleRootItem();
   for (auto itItem: itens) {
     if (itItem->parent() == nullptr) {
-      itemRaiz->insertRow(itemRaiz->rowCount(), itItem);
+      int n = itemRaiz->rowCount();
+      itemRaiz->insertRow(n, itItem);
     }
   }
 }
