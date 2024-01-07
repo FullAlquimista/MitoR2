@@ -5,4 +5,4 @@
 - [Cadastro](./Cadastro.md)
 - [Produção](<./Producao.md>)
 - [Projetos](<./Projetos.md>)
-- [Compras](<./Compras.md>)
+- [Compras](Compras.md)

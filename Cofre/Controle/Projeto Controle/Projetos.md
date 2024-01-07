@@ -57,7 +57,7 @@ Os itens de um projeto, como desenhos, peças são descritos de partes. Uma part
  - Data da criação do registro.
  - ID do usuário que criou o registro.
 ###### Tabela: registros das partes.
-| id | [[Projetos#Tabela Registros dos projetos.\|id_projeto]] | quantidade | numero_parte | descricao | descricao2 | fornecedor | material | peso | dimensao_acabada | dimensao_bruta | posicao | observacao | data | oid_usuario |
+| id | [[Projetos#Tabela producao.projetos\|id_projeto]] | quantidade | numero_parte | descricao | descricao2 | fornecedor | material | peso | dimensao_acabada | dimensao_bruta | posicao | observacao | data | oid_usuario |
 | :--: | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--: | :--: | :--: |
 | 1 | 1 | 1 | 5304-12-00 | 5304-12-Carrossel Entr. Vertedor |  |  |  |  |  |  | 1 |  |  |  |
 | 2 | 2 | 1 | 7202-01-01 | Estrutura Principal | Disp. 01-Estrutura Principal | Mirai | Sae-1020 | 400,5 | 1292x1872,8x2160mm |  |  |  | 31/12/2023 |  |

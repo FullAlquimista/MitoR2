@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3127722c398cb4ce",
+        "id": "4064ef5901a56285",
         "type": "tabs",
         "children": [
           {
-            "id": "91d50aebf42b1496",
+            "id": "95efc4b8b6926af7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,24 +20,12 @@
             }
           },
           {
-            "id": "2e2329ffed90a7cf",
+            "id": "a62dcfc7d20f5ccb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-01-02.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "75b4dc03208585f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Controle/Projeto Controle/Projetos.md",
+                "file": "Controle/Projeto Controle/Compras.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-01-02.md",
+                "file": "Controle/Projeto Controle/Compras.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-01-02.md",
+                "file": "Controle/Projeto Controle/Compras.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-01-02.md"
+                "file": "Controle/Projeto Controle/Compras.md"
               }
             }
           }
@@ -171,21 +159,25 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "2e2329ffed90a7cf",
+  "active": "a62dcfc7d20f5ccb",
   "lastOpenFiles": [
-    "Controle/Projeto Controle/Projetos.md",
-    "Controle/Projeto Controle/Producao.md",
     "Controle/Projeto Controle/Cadastro.md",
     "Controle/Projeto Controle/Compras.md",
-    "2024-01-02.md",
+    "Controle/Projeto Controle/Projetos.md",
+    "Compra.md",
+    "Controle/Projeto Controle/Producao.md",
+    "Controle/Projeto Controle/RESUMO.md",
+    "Controle/Projeto Controle/PostgreSQL.md",
     "Controle/Projeto Controle/Controle.md",
+    "2024-01-03.md",
+    "2024-01-04.md",
+    "Sem título.md",
+    "2024-01-02.md",
     "Diario/2023-12-27.md",
     "Diario/2023-12-19.md",
     "Diario/2023-12-10.md",
     "Diario/2023-11-28.md",
-    "Controle/Projeto Controle/RESUMO.md",
     "2023-12-31.md",
-    "Controle/Projeto Controle/PostgreSQL.md",
     "Diario/Imagens/Pasted image 20231210104637.png",
     "Diario/Imagens",
     "Diario/Sem título.md",
