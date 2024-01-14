@@ -77,3 +77,8 @@ data_compra DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
 data DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
 oid_usuario BIGINT);
 ```
+
+## Estoque do material
+
+#### Entrada de estoque
+Após a emissão da ordem de compra para um fornecedor, o material será faturado e entregue a fábrica. Este material deve ser controlado por algum meio. Normalmente os materiais são comprados especificamente para um equipamento, e por isso após sua chegada, eles são separados para a parte ou equipamento que o requisitou.

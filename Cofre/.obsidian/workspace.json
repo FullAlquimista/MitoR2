@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Controle/Projeto Controle/Compras.md",
+                "file": "Diario/2024-01-14.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Controle/Projeto Controle/Compras.md",
+                "file": "Controle/Projeto Controle/Projetos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Controle/Projeto Controle/Compras.md",
+                "file": "Controle/Projeto Controle/Projetos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Controle/Projeto Controle/Compras.md"
+                "file": "Controle/Projeto Controle/Projetos.md"
               }
             }
           }
@@ -146,8 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,24 +158,29 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a62dcfc7d20f5ccb",
+  "active": "eff59d30717fa070",
   "lastOpenFiles": [
-    "Controle/Projeto Controle/Cadastro.md",
+    "Diario/2024-01-13.md",
+    "Diario/2024-01-14.md",
+    "Diario/2024-01-12.md",
+    "Diario/2024-01-09.md",
     "Controle/Projeto Controle/Compras.md",
+    "Diario/2024-01-08.md",
+    "Diario/2024-01-04.md",
+    "Diario/2024-01-03.md",
+    "Diario/2024-01-02.md",
+    "Diario/2023-12-27.md",
+    "Diario/2023-11-28.md",
+    "Diario/2023-12-19.md",
+    "Sem título.md",
+    "Controle/Projeto Controle/Cadastro.md",
     "Controle/Projeto Controle/Projetos.md",
     "Compra.md",
     "Controle/Projeto Controle/Producao.md",
     "Controle/Projeto Controle/RESUMO.md",
     "Controle/Projeto Controle/PostgreSQL.md",
     "Controle/Projeto Controle/Controle.md",
-    "2024-01-03.md",
-    "2024-01-04.md",
-    "Sem título.md",
-    "2024-01-02.md",
-    "Diario/2023-12-27.md",
-    "Diario/2023-12-19.md",
     "Diario/2023-12-10.md",
-    "Diario/2023-11-28.md",
     "2023-12-31.md",
     "Diario/Imagens/Pasted image 20231210104637.png",
     "Diario/Imagens",
